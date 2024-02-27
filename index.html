@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -62,6 +63,7 @@
                     <i class="fa-regular fa-user nav-item options_icon"></i>
                 </div>
             </div>
+
             <h1>Made For You</h1>
             <div class="cards_container">
                 <div class="card">
@@ -123,8 +125,45 @@
                     <p class="card-info">Pritham, Sachet Tondon, Sajid-Wajid and more</p>
                 </div>
             </div>
+            
+            <div class="footer">
+                <div class="line"></div>
+            </div>
         </div>
-        <div class="music-player"></div>
+        <div class="music-player">
+            <div class="album">
+                <div class="album-img"><img src="./Assets/TeriOre.jpeg" alt=""></div>
+                <div class="curr-song-info">
+                    <a href="" class="song-name">Teri Ore</a>
+                    <br>
+                    <a href="" class="authors">Pritam, Rahat Fate,Shreya Ghoshal</a>
+                </div>
+                <i class="fa-regular fa-heart" style="font-size: 1.5rem;"></i>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./Assets/player_icon1.png" alt="" class="player-control-icon">
+                    <img src="./Assets/player_icon2.png" alt="" class="player-control-icon">
+                    <img src="./Assets/player_icon3.png" alt="" class="player-control-icon" style="height: 2.5rem; opacity: 1;">
+                    <img src="./Assets/player_icon4.png" alt="" class="player-control-icon">
+                    <img src="./Assets/player_icon5.png" alt="" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" step="1" class="progress-bar middle-bar">
+                    <span class="tot-time">4.44</span>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="" alt="">
+                <span class="material-symbols-outlined control-icons">queue_music</span>
+                <span class="material-symbols-outlined control-icons">devices</span>
+                <span class="material-symbols-outlined control-icons">volume_up</span>
+                <input type="range" min="1" max="100" step="1" class="progress-bar right-bar control-icons">
+                <img src="" alt="" class="control-icons">
+                <i class="fa-solid fa-up-right-and-down-left-from-center control-icons"></i>
+            </div>
+        </div>
     </div>
 </body>
 </html>

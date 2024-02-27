@@ -15,7 +15,7 @@ body {
 
 .sidebar {
     background-color: #000;
-    width: 380px;
+    width: 500px;
     border-radius: 1rem; /* 1 rem = 16px */
     padding: 0.5rem 0.75rem;
 }
@@ -34,6 +34,10 @@ body {
     bottom: 0;
     width: 100%;
     height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
 a {
@@ -142,6 +146,10 @@ a {
     width: fit-content;
 }
 
+.badge:hover {
+    cursor: pointer;
+}
+
 .sticky_nav {
     position: sticky;
     top: 0;
@@ -150,10 +158,16 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0 1rem 0;
+    z-index: 10;
 }
 
 .sticky_icons {
     margin-left: 0.75rem;
+}
+
+.sticky_icons img{
+    padding-right: 1.25rem;
+    height: 1.75rem;
 }
 
 .sticky_options {
@@ -163,8 +177,8 @@ a {
 }
 
 .options_icon{
-    padding: 1rem 0.75rem 0 0;
-    font-size: 1.31rem;
+    padding: 0 0.75rem 0 0;
+    font-size: 1.5rem;
 }
 
 .nav-item {
@@ -193,8 +207,13 @@ a {
     width: 225px;
     border-radius: 0.5rem;
     padding: 1rem;
-    margin-left: 1.5rem;
-    margin-top: 1rem;
+    margin: 0 0 2rem 1.5rem;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: #2e2e2e;
+    transition: 0.3s ease;
 }
 
 .card-img {
@@ -213,5 +232,117 @@ a {
 }
 
 .main-content h1{
-    padding-left: 1rem;
+    padding-left: 1.5rem;
+}
+
+.footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    height: 30%;
+    width: 90%;
+    border-top: 1px solid #fff;
+    opacity: 0.4;
+}
+
+.album {
+    width: 25%;
+}
+
+.player {
+    width: 50%;
+}
+
+.controls {
+    width: 25%;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.player-control-icon {
+    height: 1.25rem;
+    margin-right: 2rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover {
+    opacity: 1;
+}
+
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-bar {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 2rem;
+    height: 0.3rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #1bd760;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.album {
+    display: flex;
+    align-items: center;
+}
+
+.album img {
+    height: 76px;
+    border-radius: 0.3rem;
+}
+
+.curr-song-info {
+    margin: 0 1rem 0;
+}
+
+.curr-song-info a:hover{
+    text-decoration: underline;
+}
+
+.song-name {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-icons {
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.right-bar {
+    width: 30%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
 }
